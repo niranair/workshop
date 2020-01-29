@@ -4,4 +4,4 @@
 
 ## Reading Responses 
 
-[Blumenstock Article Response](https://github.com/niranair/data150_workshop/blob/master/blumenstock)
+1. [Blumenstock Article Response](https://niranair.github.io/data150_workshop/blumenstock)
