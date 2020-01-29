@@ -6,5 +6,5 @@ A catalog of my work for Human Development
 
 ## Reading Responses 
 
-1. [Blumenstock Article Response](https://github.com/niranair/workshop/blob/master/blumenstock.md)
+1. [Blumenstock Article Response](https://github.com/niranair/workshop/blumenstock)
 
