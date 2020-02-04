@@ -1,4 +1,4 @@
-##Response to Jahan and Rosling 
+## Response to Jahan and Rosling 
 
 In the podcast, What is Human Development, Jahan defines what human development is as well as how to maximize human potential. The idea of what human development has shifted in recent years to focus less on solely economic growth, and more on human-based metrics. Jahan alludes to Lincoln’s Gettysburg Address when he states that human development must be “of the people, for the people, and by the people.” He defines human development as the process of enlarging human choices in every aspect of life including economic, cultural, and political choices. He states that an increase in human capabilities must be matched by an increase in opportunities to use such capabilities or else there will be a loss of human potential.
 
