@@ -8,3 +8,5 @@ A catalog of my work for Human Development
 
 1. [Blumenstock Article Response](https://github.com/niranair/workshop/blumenstock)
 
+2. [Jahan and Rosling Response](https://github.com/niranair/workshop/jahanrosling)
+
