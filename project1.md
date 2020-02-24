@@ -2,6 +2,8 @@
 
 ## Problem Statement 
 
+Third world countries present the highest rate of infectious disease spread, and there is also a lack of data surrounding human movement. The goal is develop a cost-effective and accurate solution to pinpoint locations that are either the source of the disease or susceptible to the disease so that adequate and timely aid can be directed to such areas. WIth the rise of mobile phone communication, there is ample real-time data on human movement in these third world countries. The solution proposed is a machine learning model which utilizes CDR data to predict disease dynamics and where the next outbreak would be to direct aid in advance to prevent the spread and transmission of disease. 
+
 ## Source 1: Connecting Mobility to Infectious Diseases: The Promise and Limits of Mobile Phone Data
 
 ###  Wesolowski Amy, Buckee Caroline O., Engø-Monsen Kenth, Metcalf C. J. E. Connecting Mobility to Infectious Diseases: The Promise and Limits of Mobile Phone Data. Journal of Infectious Diseases. 2016;214(suppl 4):S414–S420. doi: 10.1093/infdis/jiw273.
