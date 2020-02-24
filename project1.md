@@ -48,6 +48,29 @@ After testing, the mobile phone and radiation model worked much better than the 
 
 This study proves that disease spread can exhibit localized patterns within cities, and that the simplistic representation of human movement within cities is outdated. This study proves the correlation between mobile phone data and human movement within a small area. This work can be applied to third world countries where human movement is on a larger scale. 
 
-## Source 4
+## Source 4: Integrating rapid risk mapping and mobile phone call record data for strategic malaria elimination planning
 
-## Source 5
+Tatem AJ, Huang Z, Narib C, Kumar U, Kandula D, Pindolia DK, et al. Integrating rapid risk mapping and mobile phone call record data for strategic malaria elimination planning. Malar J. 2014;13:52. doi: 10.1186/1475-2875-13-52.
+
+The research focuses on targeting interventions using surveillance data, satellite imagery, and mobile phone data in conjunction with case-based risk maps. The goal is to improve elimination methods in third world countries. Achieving elimination can come from the creation of targeted risk maps but this must be matched with real-time human movement data to prevent transmission in a timely matter. Previously, data on human movement had an associated lag because it was limited to census data and travel surveys, but with the rise of mobile devices, real-time movement is possible. 
+	
+Namibia has been scaling up its malaria prevention program to implement proactive deployment of vector control measures to high risk areas to prevent local transmission and onward spread. The model uses temporal sequences of phone tower locations to route user communications and convert them into movement trajectories. Integration of movement data with case-based risk maps provides a dynamic framework for understanding the connectivity between existing and potential malaria risk areas and defining ‘source’ and ‘sink’ regions.
+
+For the methods, cases of malaria were confirmed using rapid diagnostic tests in the three highest transmission regions, Kavango, Omusati, and Caprivi. The data was taken from the January to May season. The Spatial covariate datasets represented rainfall, temperature, elevation, topographic wetness, vegetation, land cover, distance to water, infrastructure, and population density. The CDR data spanned a 12 month period with over 1.5 million subscribers. Over the 12 month period there were over nine billion communications from 1.19 million unique SIM cards, which represents 85% of the adult population of Namibia. To protect the privacy of the users, anonymized records aggregated to the level of cell towers were provided. The data entailed caller and receiver ID, the tower ID, and the date and time of the call/text. 
+
+The models mainly examined regional movement patterns, as opposed to movements within the city. The movements were calculated by examining the temporal sequence of calls and assigning a movement to a new area and time of the move when the area and call were changed. The CDR data “enabled construction of a weighted network of movements between each phone catchment area.” The models identified sink and source areas which represented which areas were exporters of the disease and importers, respectively. 
+
+
+## Source 5: Prediction of epidemic disease dynamics using machine learning
+
+### Gupta Abhijit. (2019). Prediction of epidemic disease dynamics using machine learning. Medium. 
+
+This article was different than the others because it was not a formal research paper but a research project with an informal write-up. The author stated that the goal was to prevent disease transmission and plan interventions at a low cost. The two major goals were to minimize the financial burden and predict the next outbreak zone. 
+
+The author used geography, climate, population density, economic profile, weather, reported cases, vector agent occurrences, and proximity data to train the model on to predict the next location and date of the outbreak. The feature vectors are flexible which means that they can be applied to other diseases as well. 
+
+A problem with the data is that there is class imbalance, meaning that most areas had on-going outbreaks —  86% of the data contains positive zika cases. 
+
+Feature selection was done with a random forest model which outputted how correlated one feature was to the outbreak location/time on a scale of zero to one. The training was done on 70% of the data and testing was done on the remaining 30%. The models used were ADABoost, XGBoost, SVM, Multi Layer Perceptron, and Logistic Regression where XGBoost proved to be the best with 95% accuracy. 
+
+![](Process.png)
