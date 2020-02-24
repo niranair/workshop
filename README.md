@@ -12,5 +12,8 @@ A catalog of my work for Human Development
 
 3. [Barder Development & Complexity Response](https://niranair.github.io/workshop/owenbarder)
 
+## Projects 
+
+1. [Annotated Bibliography](https://niranair.github.io/workshop/annotated_bibliography)
 
 
