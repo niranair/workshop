@@ -1,12 +1,10 @@
-##Disaggregating Census Data for Population Mapping Using Random Forests with Remotely-Sensed and Ancillary Data
+## Disaggregating Census Data for Population Mapping Using Random Forests with Remotely-Sensed and Ancillary Data
 
 1. The authors use a semi-automatic dasymetric modeling technique which uses census and ancillary data to produce a Random Forest model. A random forest model uses population density and covariate data to to predict log population density. Random Forest is an ensemble machine learning method that is made up of many individual logistic regression trees, and together they comprise the “forest.” The individual trees are binary, meaning they output either a yes/no, 0/1, value, and the model comprises the outputs to make a prediction based off of a combination of the individual outputs. The random forest model is a machine learning model meaning it learns from the data and is able to improve prediction capabilities overtime. 
 
 2. Machine learning uses statistics to find patterns in data to make predictions for the future. The models make predictions based on previous knowledge and have the ability to improve and grow, as opposed to classical statistical approaches which will always remain the same, and come to the same conclusions. 
 
-3. Some examples of the covariates they used are land cover, elevation, slope, night time lights, precipitation, temperature, roads, waterways, bodies of water, settlements, and facility locations (schools, hospitals, healthcares). 
-
-Big data is essential for making accurate predictions about population and people because it traverses both space and time. While not all covariates are used, and there is an algorithm used to find the best covariates to use for the model, overall, the more data available, the more accurate the model will be. 
+3. Some examples of the covariates they used are land cover, elevation, slope, night time lights, precipitation, temperature, roads, waterways, bodies of water, settlements, and facility locations (schools, hospitals, healthcares). Big data is essential for making accurate predictions about population and people because it traverses both space and time. While not all covariates are used, and there is an algorithm used to find the best covariates to use for the model, overall, the more data available, the more accurate the model will be. 
 
 4. Having a highly accurate description of where each person is located is necessary for policy and planning decisions according to the authors. It is important for humanitarian aid projects that deal with infectious diseases, natural disasters, infrastructure, and migration, when it is necessary to distribute resources. For planning purposes, it is necessary to know how cities and urban areas are growing. To maintain and help cities thrive, it is important to understand population dynamics to direct help in a positive and impactful way. 
 
