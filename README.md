@@ -16,6 +16,8 @@ A catalog of my work for Human Development
 
 5. [Stevens Response](https://niranair.github.io/workshop/randomforests)
 
+6. [Nieves Response](https://niranair.github.io/workshop/nieves)
+
 ## Projects 
 
 1. [Annotated Bibliography](https://niranair.github.io/workshop/project1) 
