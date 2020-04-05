@@ -1,4 +1,4 @@
-## <div align="center"> Using CDR and Mobile Phone Data in a Stacked Architecture Machine Learning Model to predict Malaria Dynamics in Nigeria
+## <center>Using CDR and Mobile Phone Data in a Stacked Architecture Machine Learning Model to predict Malaria Dynamics in Nigeria</center>
 
 ### **Introduction**
 
