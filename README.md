@@ -22,5 +22,7 @@ A catalog of my work for Human Development
 
 1. [Annotated Bibliography](https://niranair.github.io/workshop/project1) 
 
+2. [Literature Review](https://niranair.github.io/workshop/Assignment2)
+
 
  
