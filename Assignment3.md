@@ -16,4 +16,47 @@ Finally, the third sub-question is an attempt to eliminate a gap within the rese
 
 ## Data 
 The study done by the KCDC used data from 576 days between January 1st of 2016 to July 29th of 2017. For the infectious disease data they used information about malaria, scarlet fever, and chickenpox because the data was being reported frequently which was necessary for predicting future cases. Query data was also acquired from Twitter using a web crawler. 
+
 ![](data1.png)
+
+Table 1 describes the different data types used including the type, source, and description. The different types of data that were used were disease data (occurrences), weather data (temperature, humidity), and query data (Twitter). 
+
+![](data2.png)
+
+Table two shows the statistics for the data used in the study. The table shows that on average, over 23 people were infected with malaria daily, with a standard deviation of 13.89 persons. 
+
+Although the ARIMA and LSTM papers do not use CDR data, a big part of my project is pairing these models with more accurate human movement data, so it is important to talk about how the CDR data was acquired by other authors. Currently, CDR data can be difficult to get access to because attaining the data requires some sort of personal relationship with a specific operator. 
+
+CDR data is logged whenever someone with a mobile phone makes or receives a call or text, and a digital data point is created based on the location of the nearest cell tower. In cities where cell towers are abundant, the locations are within a block of where the call/text was made, but in more rural areas, where cell towers are more sparse, the resolution drops off. 
+
+To understand individual human movements, and more broadly population-level dynamics, phone users can be followed over time using the CDR data they generate to create longitudinal travel patterns. 
+
+![](cdr.png)
+
+The diagram above describes how CDRs are used to approximate location and movement for individual users. Each circle represents a phone tower and the arrows represent the movements, both observed and unobserved. On the graph, the y-axis represents the time the call was made, and the x-axis shows what day in a seven day period the call was made on. The color blocks indicate which cell tower logged the call/text. With this information, a user's movement can be tracked overtime as information is logged simultaneously for time, day, and location. 
+
+## Methods 
+The two methods that would be well suited for predicting future movement of malaria are the ARIMA and LSTM machine learning models. 
+
+The ARIMA model is an Auto Regressive Integrated Moving average Model which is used to forecast future time points. 
+AutoRegression calculates the weights for a variable based on past values of itself. The ARIMA model looks at trends between previous time points of itself and predicts future time points from the previous trends [9]. The ARIMA is the most commonly used model because it accounts for the seasonality and transmissibility better than most models. Although, ARIMA models are limited by the assumption that there is a linear correlation structure [7].he ARIMA model is especially good for analyzing non-stationary time series data. Since the model is robust over fluctuating data, it is especially useful for modeling a disease such as malaria, that is seasonal. The ARIMA model “treats a data sequence for a given variable over time as a random sequence and uses a mathematical model to fit the data.”
+
+The seasonal ARIMA model is represented by ARIMA(p, d, q)(P, D, Q)S. P is represents the autoregressive part, D represents the order of differencing, Q represents the order of the moving average process, and S is the seasonal cycle. The equation below represents the written form of the ARIMA model. 
+
+![](arima_eq.png)
+
+The LSTM model is a Long Short Term Memory network which is a more advanced version of a Recurrent Neural Network. LSTMs yield more accurate results because more contextual information is available when making predictions. The four parts of the LSTM are the “ input gate, output gate, and forget gate that are non-linear summation units that control the activation of the cell.” The input gate takes in the information for the current cell. The forget gate multiplies the previous cell yielding a value from zero to one. This value indicates whether the given information should be “forgotten” or passed on as context for the next predictions. With this action, the LSTM is capable of keeping information for longer periods of time than an RNN. The output gate then takes this updated information and outputs it to the next cell. The activation function of the gate is a sigmoid function. 
+
+![](lstm.png)
+
+Below are the equations the LSTM uses to forget, store, renew, and output information from a cell. 
+
+![](lstm_eq.png)
+
+To compare the models the Root Mean Squared Error (RMSE) was used to evaluate the prediction rates of the different models. The RMSE takes the measurement for the different between the predicted and actual values. 
+
+![](rmse.png)
+
+To combine machine learning models, either stacking, boosting, or bagging. Compared to boosting and bagging, stacking has the highest prediction precision and the lowest risk of overfitting. Shown in the diagram below, stacking trains the models (ARIMA and LSTM in this case) individually, and then combines them by creating a second learning algorithm that is trained based on the prediction results of the primary models. 
+
+![](stacked.png)
