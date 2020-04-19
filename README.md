@@ -24,5 +24,7 @@ A catalog of my work for Human Development
 
 2. [Literature Review](https://niranair.github.io/workshop/Assignment2)
 
+3. [Assignment 3: Investigating a Methodology](https://niranair.github.io/workshop/Assignment3)
+
 
  
